@@ -1,5 +1,11 @@
 body {
   background: hsla(25, 100%, 50%, .3);
+  /* background: repeating-linear-gradient(
+      90deg,
+      gray 0px,
+      red 40px,
+      orange 40px,
+      yellow 80px) */
 }
 
 .titlecard {
@@ -12,13 +18,71 @@ body {
 
 }
 
-.instructions {
-  height: 50px;
-  background: linear-gradient(35deg, #CFFFFF, #FFCCFF);
+.titlecard:hover {
+  transform: scale(2.0)
 }
+.instructionsbox {
+  height: 50px;
+  border-radius: 5px;
+  background: pink;
+}
+
+.instructions {
+  text-align: center;
+font-family: fantasy;
+  font-size: 45px;
+  top: 50px;
+}
+
+.balls {
+  border-radius: 50%;
+  background: linear-gradient(
+    30deg,
+    #CC00FF,
+    #FFCC00
+    );
+  position: fixed;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  animation-name: ball;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+  #ball1 {left: 25%;}
+
+  #ball2 {left: 5%;}
+
+  @keyframes ball {
+    0% {top: 150px;}
+    100% {top: 349px;}
+  }
+  #ball2:hover {
+    transform: scale(2.0)
+
+  }
+  #ball1:hover {
+    transform: scale(2.0)
+  }
 
 h4 {
   text-align: center;
   font-size: 22px
-
 }
+
+.rewormpic {
+  width: 25%;
+  margin-left: 200px;
+  animation-name: reworm;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes reworm {
+    0%{margin-left: 200px}
+    100%{margin-left: 400px}
+    }
+  }
