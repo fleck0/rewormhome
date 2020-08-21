@@ -1,3 +1,12 @@
+/*colors are working ok, blue, teal and green with orange highlights?
+I dunno play around more with analogous complementary colors.
+looks at triads too
+
+Reworm is looking ok, he could turn around, that would be controls
+
+Balls need a rework, the ball statement could go but I like them incorperated
+
+Needs some sort of input, like the most basic 2 button RPG or something*/
 body {
   background: rgb(164, 214, 214);
   /* background: repeating-linear-gradient(
@@ -21,7 +30,9 @@ body {
   border-bottom: 20px;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 4px 6px 6px rgba(0, 0, 0, 0.23);
 }
-
+/*maybe try removing the .title class and also
+remove the <p> from the html? I dunno, I need to
+look up how to do title cards*/
 .title {
   margin-block-start: 0em;
   margin-block-end: 0em;
